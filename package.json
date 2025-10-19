@@ -1,0 +1,16 @@
+{
+  "name": "@dmnchzl/jiraya",
+  "version": "0.0.1",
+  "description": "This is a lightweight Kanban board application",
+  "author": "DmnChzl <dmnchzl@pm.me>",
+  "repository": "https://github.com/dmnchzl/jiraya.git",
+  "scripts": {
+    "dev": "nitro dev",
+    "build": "nitro build"
+  },
+  "devDependencies": {
+    "h3": "~1.15.0",
+    "nitropack": "~2.12.5"
+  },
+  "license": "WTFPL"
+}
