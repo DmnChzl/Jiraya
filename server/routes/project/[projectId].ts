@@ -97,6 +97,7 @@ export default defineEventHandler((event) => {
 
   return BaseLayout({
     title: 'Scrum Learning - Jiraya',
-    content
+    content,
+    scripts: [{ src: '/dragDropHandler.js', type: 'text/javascript' }]
   });
 });
