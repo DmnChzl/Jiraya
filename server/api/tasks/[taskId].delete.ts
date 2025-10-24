@@ -1,5 +1,5 @@
+import { deleteTask } from '@server/utils/db';
 import { defineEventHandler, getRouterParam, setResponseHeader, setResponseStatus } from 'h3';
-import { deleteTask } from '../../utils/db';
 
 export default defineEventHandler(async (event) => {
   const taskId = getRouterParam(event, 'taskId');

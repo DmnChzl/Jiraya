@@ -1,5 +1,5 @@
+import { deleteLinkedProject } from '@server/utils/db';
 import { defineEventHandler, getRouterParam, setResponseHeader, setResponseStatus } from 'h3';
-import { deleteLinkedProject } from '../../utils/db';
 
 export default defineEventHandler((event) => {
   const projectId = getRouterParam(event, 'projectId');

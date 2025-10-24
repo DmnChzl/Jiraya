@@ -1,8 +1,8 @@
+import { DialogContainer } from '@server/templates/components/dialog-container';
+import { TaskForm } from '@server/templates/components/task-form';
+import { MessageCirclePlusIcon } from '@server/templates/icons';
+import { getLinkedProject } from '@server/utils/db';
 import { defineEventHandler, getRouterParam, setResponseStatus } from 'h3';
-import { DialogContainer } from '../../../../templates/components/dialog-container';
-import { TaskForm } from '../../../../templates/components/task-form';
-import { MessageCirclePlusIcon } from '../../../../templates/icons';
-import { getLinkedProject } from '../../../../utils/db';
 
 export default defineEventHandler((event) => {
   const projectId = getRouterParam(event, 'projectId');

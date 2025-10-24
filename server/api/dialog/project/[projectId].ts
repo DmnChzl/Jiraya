@@ -1,7 +1,7 @@
+import { DialogContainer } from '@server/templates/components/dialog-container';
+import { ProjectForm } from '@server/templates/components/project-form';
+import { getProject } from '@server/utils/db';
 import { defineEventHandler, getRouterParam, setResponseStatus } from 'h3';
-import { DialogContainer } from '../../../templates/components/dialog-container';
-import { ProjectForm } from '../../../templates/components/project-form';
-import { getProject } from '../../../utils/db';
 
 export default defineEventHandler((event) => {
   const projectId = getRouterParam(event, 'projectId');

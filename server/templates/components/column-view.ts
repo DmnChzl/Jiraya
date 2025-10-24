@@ -1,5 +1,5 @@
-import { type UnlinkedTask } from '../../models/task';
-import { html } from '../../utils/render';
+import type { UnlinkedTask } from '@server/models/task';
+import { html } from '@server/utils/render';
 import { TaskCard } from './task-card';
 
 interface ColumnViewProps {

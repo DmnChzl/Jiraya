@@ -1,5 +1,5 @@
-import { html } from '../../utils/render';
-import { ChevronUpDownIcon, DoubleTagIcon, TagIcon, TrashIcon } from '../icons';
+import { ChevronUpDownIcon, DoubleTagIcon, TagIcon, TrashIcon } from '@server/templates/icons';
+import { html } from '@server/utils/render';
 
 interface TaskFormProps {
   mode: 'creation' | 'edition';

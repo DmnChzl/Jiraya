@@ -24,8 +24,11 @@
     // "noUnusedParameters": true,
     "verbatimModuleSyntax": true,
 
-     // Libs & Paths
+    // Libs & Paths
     "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
+    "paths": {
+      "@server/*": ["server/*"]
+    }
   }
 }

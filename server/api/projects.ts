@@ -1,8 +1,8 @@
+import { ProjectCard } from '@server/templates/components/project-card';
+import { PlusIcon } from '@server/templates/icons';
+import { getAllProjects, getLinkedProject } from '@server/utils/db';
+import { html } from '@server/utils/render';
 import { defineEventHandler } from 'h3';
-import { ProjectCard } from '../templates/components/project-card';
-import { PlusIcon } from '../templates/icons';
-import { getAllProjects, getLinkedProject } from '../utils/db';
-import { html } from '../utils/render';
 
 export default defineEventHandler((_event) => {
   const projects = getAllProjects()

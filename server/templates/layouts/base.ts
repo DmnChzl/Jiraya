@@ -1,5 +1,5 @@
-import { html } from '../../utils/render';
-import { Helmet, type HelmetScript } from '../components/helmet';
+import { Helmet, type HelmetScript } from '@server/templates/components/helmet';
+import { html } from '@server/utils/render';
 
 interface BaseLayoutProps {
   title: string;

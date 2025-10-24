@@ -1,5 +1,5 @@
-export const html = (strings: TemplateStringsArray, ...values: any[]) => {
-  return strings.reduce((result, str, idx) => {
+export const html = (tpl: TemplateStringsArray, ...values: any[]) => {
+  return tpl.reduce((result, str, idx) => {
     const value = values[idx];
 
     if (Array.isArray(value)) {

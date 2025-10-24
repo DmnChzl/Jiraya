@@ -1,5 +1,5 @@
-import { html } from '../../utils/render';
-import { DoubleTagIcon, TagIcon, TrashIcon } from '../icons';
+import { DoubleTagIcon, TagIcon, TrashIcon } from '@server/templates/icons';
+import { html } from '@server/utils/render';
 
 interface ProjectFormProps {
   mode: 'creation' | 'edition';

@@ -1,5 +1,5 @@
+import { updateProject } from '@server/utils/db';
 import { defineEventHandler, getRouterParam, readBody, setResponseHeader, setResponseStatus } from 'h3';
-import { updateProject } from '../../utils/db';
 
 interface ProjectBody {
   title: string;

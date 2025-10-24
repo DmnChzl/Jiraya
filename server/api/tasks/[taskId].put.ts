@@ -1,5 +1,5 @@
+import { updateTask } from '@server/utils/db';
 import { defineEventHandler, getRouterParam, readBody, setResponseHeader, setResponseStatus } from 'h3';
-import { updateTask } from '../../utils/db';
 
 interface TaskBody {
   title: string;

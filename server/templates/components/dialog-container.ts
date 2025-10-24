@@ -1,5 +1,5 @@
-import { html } from '../../utils/render';
-import { MessageCircleIcon, MessageSquareIcon } from '../icons';
+import { MessageCircleIcon, MessageSquareIcon } from '@server/templates/icons';
+import { html } from '@server/utils/render';
 
 interface DialogHeader {
   icon?: string;

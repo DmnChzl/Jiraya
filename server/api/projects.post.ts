@@ -1,5 +1,5 @@
+import { createProject, createStageWithProjectId } from '@server/utils/db';
 import { defineEventHandler, readBody, setResponseHeader, setResponseStatus } from 'h3';
-import { createProject, createStageWithProjectId } from '../utils/db';
 
 interface ProjectBody {
   title: string;

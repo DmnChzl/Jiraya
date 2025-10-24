@@ -1,5 +1,5 @@
+import { createTaskWithStageId } from '@server/utils/db';
 import { defineEventHandler, readBody, setResponseHeader, setResponseStatus } from 'h3';
-import { createTaskWithStageId } from '../utils/db';
 
 interface TaskBody {
   title: string;

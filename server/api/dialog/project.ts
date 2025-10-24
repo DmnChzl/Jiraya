@@ -1,7 +1,7 @@
+import { DialogContainer } from '@server/templates/components/dialog-container';
+import { ProjectForm } from '@server/templates/components/project-form';
+import { MessageSquarePlusIcon } from '@server/templates/icons';
 import { defineEventHandler } from 'h3';
-import { DialogContainer } from '../../templates/components/dialog-container';
-import { ProjectForm } from '../../templates/components/project-form';
-import { MessageSquarePlusIcon } from '../../templates/icons';
 
 export default defineEventHandler((_event) => {
   return DialogContainer({

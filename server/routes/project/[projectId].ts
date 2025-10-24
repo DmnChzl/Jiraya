@@ -1,10 +1,10 @@
+import { TaskCardSkeleton } from '@server/templates/components/task-card';
+import { PlusIcon } from '@server/templates/icons';
+import { BaseLayout } from '@server/templates/layouts/base';
+import { HeaderLayout } from '@server/templates/layouts/header';
+import { getProject } from '@server/utils/db';
+import { html } from '@server/utils/render';
 import { defineEventHandler, getRouterParam } from 'h3';
-import { TaskCardSkeleton } from '../../templates/components/task-card';
-import { PlusIcon } from '../../templates/icons';
-import { BaseLayout } from '../../templates/layouts/base';
-import { HeaderLayout } from '../../templates/layouts/header';
-import { getProject } from '../../utils/db';
-import { html } from '../../utils/render';
 
 const ProjectNotFound = () => html`
   <main class="w-full max-w-[1280px] h-[calc(100%-74px)] mx-auto px-4 xl:px-0 py-4 flex flex-col gap-y-4 overflow-y-auto">

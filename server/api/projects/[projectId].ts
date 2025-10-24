@@ -1,6 +1,6 @@
+import { getProject } from '@server/utils/db';
+import { html } from '@server/utils/render';
 import { defineEventHandler, getRouterParam, setResponseStatus } from 'h3';
-import { getProject } from '../../utils/db';
-import { html } from '../../utils/render';
 
 export default defineEventHandler((event) => {
   const projectId = getRouterParam(event, 'projectId');

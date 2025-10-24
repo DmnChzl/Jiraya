@@ -1,9 +1,9 @@
+import { ProjectCardSkeleton } from '@server/templates/components/project-card';
+import { PlusIcon } from '@server/templates/icons';
+import { BaseLayout } from '@server/templates/layouts/base';
+import { HeaderLayout } from '@server/templates/layouts/header';
+import { html } from '@server/utils/render';
 import { defineEventHandler } from 'h3';
-import { ProjectCardSkeleton } from '../templates/components/project-card';
-import { PlusIcon } from '../templates/icons';
-import { BaseLayout } from '../templates/layouts/base';
-import { HeaderLayout } from '../templates/layouts/header';
-import { html } from '../utils/render';
 
 const AbsoluteCloud = () => `
   <div class="absolute bottom-0 right-0 size-[144px] -z-5">

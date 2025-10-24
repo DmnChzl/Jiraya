@@ -35,7 +35,7 @@ pnpm run build
 Preview:
 
 ```bash
-node .output/server/index.mjs
+pnpm run preview
 ```
 
 ## License

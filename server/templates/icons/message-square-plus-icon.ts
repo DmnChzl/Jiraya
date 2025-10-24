@@ -1,4 +1,4 @@
-import { html } from '../../utils/render';
+import { html } from '@server/utils/render';
 
 interface IconProps {
   className?: string;

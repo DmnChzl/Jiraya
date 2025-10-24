@@ -1,5 +1,5 @@
-import { html } from '../../utils/render';
-import { GridPlusIcon, MoonIcon, SearchIcon, SunIcon } from '../icons';
+import { GridPlusIcon, MoonIcon, SearchIcon, SunIcon } from '@server/templates/icons';
+import { html } from '@server/utils/render';
 
 export const HeaderLayout = () => html`
   <header class="p-4 bg-white shadow z-5">
@@ -19,7 +19,7 @@ export const HeaderLayout = () => html`
           ${GridPlusIcon({})}
           <span>New Project</span>
         </button>
-        <form class="flex gap-x-4 w-full" 
+        <form class="flex gap-x-4 w-full"
           hx-post="/api/projects/join"
           hx-swap="none">
           <div class="w-full flex gap-x-2 items-center p-2 bg-neutral-100 focus-within:bg-white border border-neutral-100 focus-within:border-neutral-200 rounded-lg">

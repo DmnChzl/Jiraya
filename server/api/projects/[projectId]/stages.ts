@@ -1,7 +1,7 @@
+import { ColumnView } from '@server/templates/components/column-view';
+import { getLinkedProject } from '@server/utils/db';
+import { html } from '@server/utils/render';
 import { defineEventHandler, getRouterParam } from 'h3';
-import { ColumnView } from '../../../templates/components/column-view';
-import { getLinkedProject } from '../../../utils/db';
-import { html } from '../../../utils/render';
 
 // prettier-ignore
 const sortBy = <T>(key: keyof T) => (a: T, b: T) => a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0;

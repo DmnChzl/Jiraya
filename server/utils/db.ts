@@ -1,9 +1,9 @@
-import type { BaseProject, LinkedProject } from '../models/project';
-import { ProjectBuilder } from '../models/project.builder';
-import { type BaseStage, type LinkedStage, mapBaseToUnlinkedStage } from '../models/stage';
-import { StageBuilder } from '../models/stage.builder';
-import { type BaseTask, type LinkedTask, mapBaseToUnlinkedTask } from '../models/task';
-import { TaskBuilder } from '../models/task.builder';
+import type { BaseProject, LinkedProject } from '@server/models/project';
+import { ProjectBuilder } from '@server/models/project.builder';
+import { type BaseStage, type LinkedStage, mapBaseToUnlinkedStage } from '@server/models/stage';
+import { StageBuilder } from '@server/models/stage.builder';
+import { type BaseTask, type LinkedTask, mapBaseToUnlinkedTask } from '@server/models/task';
+import { TaskBuilder } from '@server/models/task.builder';
 
 const db = {
   projects: new Map<string, BaseProject>(),

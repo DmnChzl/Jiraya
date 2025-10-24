@@ -1,5 +1,5 @@
-import { html } from '../../utils/render';
-import { CalendarIcon } from '../icons';
+import { CalendarIcon } from '@server/templates/icons';
+import { html } from '@server/utils/render';
 
 interface TaskCardProps {
   id: string;

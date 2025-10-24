@@ -1,4 +1,4 @@
-import { html } from '../../utils/render';
+import { html } from '@server/utils/render';
 
 export interface HelmetMeta {
   name?: string;
